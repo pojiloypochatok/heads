@@ -1,0 +1,136 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Bitter', serif;
+    font-weight: 400; /* Обычный */
+    background-color: #d2c0a5; /* Цвет нижнего блока */
+    color: #f5f5f5;
+}
+
+.header {
+    position: relative;
+    z-index: 5;
+    background-image: url('backg.png');
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.underline {
+    width: 1400px;
+    height: 4px;
+    border-radius: 55px;
+    background-color: #EDE7CE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.main {
+    background-color: #5d4b42; /* Основной коричневый цвет */
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 4;
+    height: 700px;
+    background-color: #b2b2b2; /* Светлый фон блока */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.block-content{
+    display: flex; /* Включаем Flexbox */
+    gap: 500px; /* Расстояние между элементами */
+    margin: auto;
+}
+
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #e1d7c6; /* Заглушка для изображения */
+    border: 2px solid #3e2d26;;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 25%;
+    margin-left: 100px;
+}
+
+.image-placeholder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #3e2d26;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+    margin-top: -20px;
+    height: 400px;
+    background-color: #c5c2c2; /* Светлый фон блока */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.works, .sketches {
+    width: 45%;
+    height: 150px;
+    background-color: #3e2d26; /* Цвет блоков Работы и Эскизы */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+    margin-top: -20px;
+    height: 400px;
+    background-color: #b6a48b; /* Светлый фон блока */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
