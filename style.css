@@ -11,7 +11,7 @@
 body {
     font-family: 'Bitter', serif;
     font-weight: 400; /* Обычный */
-    background-color: #d2c0a5; /* Цвет нижнего блока */
+    background-color: #a09e9e; /* Цвет нижнего блока */
     color: #f5f5f5;
 }
 
@@ -22,6 +22,7 @@ body {
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .logo {
@@ -41,12 +42,13 @@ body {
 }
 
 .underline {
-    width: 1400px;
+    width: 100%;
     height: 4px;
     border-radius: 55px;
-    background-color: #EDE7CE;
+    background-color: #4f4e4e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
+    margin: 0 auto;
 }
 .main {
     background-color: #5d4b42; /* Основной коричневый цвет */
@@ -59,7 +61,7 @@ body {
     position: relative;
     z-index: 4;
     height: 700px;
-    background-color: #b2b2b2; /* Светлый фон блока */
+    background-color: #a09e9e; /* Светлый фон блока */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -68,8 +70,8 @@ body {
 
 .block-content{
     display: flex; /* Включаем Flexbox */
-    gap: 500px; /* Расстояние между элементами */
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 .image-placeholder {
@@ -77,13 +79,13 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 20px;
-    background-color: #e1d7c6; /* Заглушка для изображения */
-    border: 2px solid #3e2d26;;
     border-radius: 10px;
+    border: #373737 1px solid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 25%;
-    margin-left: 100px;
+    width: 140%;
+    height: 90%;
+    margin-left: 10px;
+    margin-right: 150px;
 }
 
 .image-placeholder img{
@@ -93,9 +95,10 @@ body {
 }
 
 .text {
-    margin-left: 20px;
-    font-size: 18px;
-    color: #3e2d26;
+    font-size: 28px;
+    color: #373737;
+    max-width: 600px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .work {
@@ -104,22 +107,36 @@ body {
     position: relative;
     z-index: 3;
     margin-top: -20px;
-    height: 400px;
-    background-color: #c5c2c2; /* Светлый фон блока */
+    height: 1000px;
+    background-color: #a7a5a5; /* Светлый фон блока */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.works, .sketches {
-    width: 45%;
-    height: 150px;
-    background-color: #3e2d26; /* Цвет блоков Работы и Эскизы */
-    border-radius: 10px;
+.block-work{
+    display: flex; /* Включаем Flexbox */
+    margin: 0 auto;
+    margin-top: 5%;
+    gap: 100px; 
+}
+
+.works{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: #373737 3px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 90%;
+}
+
+.works img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer {
@@ -133,4 +150,13 @@ body {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
 }
