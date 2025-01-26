@@ -9,7 +9,7 @@
 
 
 body {
-    font-family: 'Bitter', serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400; /* Обычный */
     background-color: #a09e9e; /* Цвет нижнего блока */
     color: #f5f5f5;
@@ -60,13 +60,16 @@ body {
     justify-content: space-around;
     position: relative;
     z-index: 4;
-    height: 700px;
-    background-color: #a09e9e; /* Светлый фон блока */
+    height: 900px;
+    background-image: url('IMG_0548.PNG');/* Путь к вашей картинке */
+    background-size: cover; /* Картинка полностью покрывает блок */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Убираем повторение */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
+
 
 .block-content{
     display: flex; /* Включаем Flexbox */
@@ -94,11 +97,22 @@ body {
     object-fit: cover;
 }
 
+.text-box{
+}
+
 .text {
-    font-size: 28px;
-    color: #373737;
-    max-width: 600px;
+    margin-left: 900px;
+    border-radius: 25px;
+    padding: 20px;
+    border: #939191 1px;
+    background-color: #e4dede;
+    font-size: 18px;
+    color: #6c6c6c;
+    max-width: 400px;
+    max-height: 80%;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .work {
@@ -107,8 +121,8 @@ body {
     position: relative;
     z-index: 3;
     margin-top: -20px;
-    height: 1000px;
-    background-color: #a7a5a5; /* Светлый фон блока */
+    height: 800px;
+    background-color: #3e3d3d; /* Светлый фон блока */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -117,7 +131,7 @@ body {
 .block-work{
     display: flex; /* Включаем Flexbox */
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 4%;
     gap: 100px; 
 }
 
@@ -129,14 +143,60 @@ body {
     border-radius: 10px;
     border: #373737 3px solid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 90%;
+    width: 600px;
+    height: 80%;
 }
 
 .works img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.frame-container {
+    display: flex;
+    flex-direction: column; /* Элементы идут сверху вниз */
+    align-items: center; /* Центрируем по горизонтали */
+    gap: 20px; /* Расстояние между заголовком и рамкой */
+}
+
+.frame-title {
+    font-size: 24px; /* Размер заголовка */
+    font-weight: bold; /* Жирный текст */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f1ebeb; /* Цвет заголовка */
+    text-align: center; /* Центровка текста */
+    margin: 0; /* Убираем стандартные отступы */
+}
+
+.photo-frame.swiper {
+    width: 100%;  /* Убираем фиксированную ширину */
+    height: 100%;  /* Убираем фиксированную высоту */
+    position: relative;  /* Убираем любые отступы, которые могут быть заданы */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #373737 !important;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #373737 !important;
 }
 
 .footer {

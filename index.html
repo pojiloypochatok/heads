@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Сайт студии</title>
         <link rel="stylesheet" href="style.css">
@@ -11,16 +13,13 @@
 <body>
     <header class="header">
         <img src="головы.png"></img>
-        <div class="underline"></div>
     </header>
     <div class="section" id="section1">
     <div class="about">
         <div class="block-content">
-            <div class="image-placeholder">
-                <img src="Иллюстрация_без_названия 1.jpg">
-            </div>
+
             <div class="text">
-                <h1 style="margin-bottom: 20px; color: #282727"> О нас</h1>
+                <h1 style="margin-bottom: 20px; color: #333232; font-size: 50px"> О нас</h1>
                 
                 <p1>                Мечтаешь о татуировке?
                     Выбираешь хорошего мастера в Томске?
@@ -31,8 +30,8 @@
                     
                     Прямо сейчас сориентирую тебя по стоимости и подробно проконсультирую.
                     
-                    Просто опиши свою задумку по ссылке ссылка</p1>
-                <div class="underline" style="margin-top: 20px;"></div>
+                    Просто опиши свою задумку по ссылке ссылка
+                    Пипупупупу подробно пипуп Просто грубо пипупи я такой пипуп я прям пипуп наверное даже бам бам да и вовсе пам парам пип парам</p1>
             </div>
         </div>
     </div>
@@ -40,19 +39,52 @@
     <div class="section" id="section0">
         <div class="work">
             <div class="block-work">
-                <div class="works">
-                    <img src="photo_2025-01-10_17-52-50.jpg">
+                <!-- Первая рамка -->
+                <div class="frame-container">
+                    <h2 class="frame-title">Эскизы</h2>
+                    <div class="works">
+                        <div class="photo-frame swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Слайды -->
+                                <div class="swiper-slide"><img src="photo_2025-01-08_01-49-55.jpg" alt="Slide"></div>
+                                <div class="swiper-slide"><img src="photo_2025-01-08_01-49-55.jpg" alt="Slide"></div>
+                            </div>
+                            <!-- Индикаторы (точки) -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Навигация -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="works">
-                    <img src="photo_2025-01-08_01-49-55.jpg">
+        
+                <!-- Вторая рамка -->
+                <div class="frame-container">
+                    <h2 class="frame-title">Работы</h2>
+                    <div class="works">
+                        <div class="photo-frame swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Слайды -->
+                                <div class="swiper-slide"><img src="photo_2025-01-10_17-52-50.jpg" alt="Slide"></div>
+                                <div class="swiper-slide"><img src="photo_2025-01-10_17-52-50.jpg" alt="Slide"></div>
+                            </div>
+                            <!-- Индикаторы (точки) -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Навигация -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        
+    </div>        
     <div class="footer">
         <div class="block-content">
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
