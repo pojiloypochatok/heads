@@ -60,8 +60,8 @@ body {
     justify-content: space-around;
     position: relative;
     z-index: 4;
-    height: 900px;
-    background-image: url('IMG_0548.PNG');/* Путь к вашей картинке */
+    height: 700px;
+    background-image: url('Иллюстрация_без_названия\ 6.png');/* Путь к вашей картинке */
     background-size: cover; /* Картинка полностью покрывает блок */
     background-position: center; /* Центрируем изображение */
     background-repeat: no-repeat; /* Убираем повторение */
@@ -85,10 +85,10 @@ body {
     border-radius: 10px;
     border: #373737 1px solid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 140%;
-    height: 90%;
+    width: 500px;
+    height: 600px;
     margin-left: 10px;
-    margin-right: 150px;
+    margin-right: 10px;
 }
 
 .image-placeholder img{
@@ -97,22 +97,21 @@ body {
     object-fit: cover;
 }
 
-.text-box{
-}
-
 .text {
+    display: flex; /* Позволяет контенту растягивать высоту */
+    flex-direction: column; /* Сохранение структуры текста */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    height: fit-content; /* Автоматическая высота */
     margin-left: 900px;
     border-radius: 25px;
-    padding: 20px;
+    padding: 15px;
     border: #939191 1px;
     background-color: #e4dede;
     font-size: 18px;
     color: #6c6c6c;
     max-width: 400px;
-    max-height: 80%;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
 }
 
 .work {
@@ -141,7 +140,7 @@ body {
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
-    border: #373737 3px solid;
+    border: #1e1e1e 2px solid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 600px;
     height: 80%;
@@ -199,11 +198,79 @@ body {
     background-color: #373737 !important;
 }
 
-.footer {
+.contact{
     display: flex;
     justify-content: space-around;
     position: relative;
     z-index: 2;
+    margin-top: -23px;
+    height: 700px;
+    background-color: #6f6b6b;
+    background-size: cover; /* Картинка полностью покрывает блок */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Убираем повторение */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-block{
+    margin-top: 40px;       
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.contacts-text{
+    display: flex; /* Позволяет контенту растягивать высоту */
+    flex-direction: column; /* Сохранение структуры текста */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    margin-left: 200px;
+}
+
+.contact-header{
+    margin-bottom: 20px;
+    color: #e4dede; 
+    font-size: 26px;
+    display: flex; /* Позволяет контенту растягивать высоту */
+    flex-direction: column; /* Сохранение структуры текста */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    height: fit-content; /* Автоматическая высота */
+    border-radius: 55px;
+    padding: 20px;
+    border: #939191 1px;
+    background-color: #484747;
+    max-width: 600px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-line{
+    margin-bottom: 20px;
+    color: #e4dede; 
+    font-size: 30px;
+    display: flex; /* Позволяет контенту растягивать высоту */
+    flex-direction: column; /* Сохранение структуры текста */
+    align-items: center; /* Выравнивание по левому краю */
+    height: fit-content; /* Автоматическая высота */
+    border-radius: 40px;
+    padding: 20px;
+    border: #939191 1px;
+    background-color: #484747;
+    min-width: 400px;
+    max-width: 600px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
     margin-top: -20px;
     height: 400px;
     background-color: #b6a48b; /* Светлый фон блока */
