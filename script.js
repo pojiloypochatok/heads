@@ -1,6 +1,7 @@
 // Анимация появления секций при прокрутке (для остальных блоков)
+// Анимация появления секций и кнопок при прокрутке
 document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.section'); // Секции для анимации
+    const sections = document.querySelectorAll('.section, .contact-row'); // Отслеживаем и секции, и кнопки
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     sections.forEach(section => {
-        observer.observe(section); // Отслеживаем каждую секцию
+        observer.observe(section); // Отслеживаем каждую секцию и кнопку
     });
 });
 
@@ -58,11 +59,4 @@ fileInput.addEventListener('change', function () {
     }
 });
 
-// Событие отправки формы
-document.querySelector('form').addEventListener('submit', function (e) {
-    // После отправки формы сбрасываем состояние
-    previewImage.style.display = 'none';
-    fileLabel.style.display = 'block';
-    fileInput.value = ''; // Очищаем input
-});
 
