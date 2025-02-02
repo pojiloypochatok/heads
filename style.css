@@ -12,7 +12,7 @@ html,body {
     font-family: "Poppins", sans-serif;
     font-weight: 400; /* Обычный */
     color: #f5f5f5;
-    background-color: transparent; /* Устанавливает прозрачный фон для всей страницы */
+    background-color: #3e3d3d;;
     height: 100%;
 }
 
@@ -451,7 +451,10 @@ html,body {
     }
 
     .contact-line{
-        font-size: 20px
+        font-size: 20px;
+        padding: 15px;
+        font-weight: bold;
+        justify-content: center;
     }
 
     .image-placeholder{
