@@ -8,11 +8,12 @@
 
 
 
-body {
+html,body {
     font-family: "Poppins", sans-serif;
     font-weight: 400; /* Обычный */
-    background-color: #a09e9e; /* Цвет нижнего блока */
+    background-color: #3e3d3d; /* Цвет нижнего блока */
     color: #f5f5f5;
+    height: 100%;
 }
 
 .header {
@@ -60,7 +61,7 @@ body {
     justify-content: space-around;
     position: relative;
     z-index: 4;
-    height: 700px;
+    height: 100%;
     background-image: url('Иллюстрация_без_названия\ 6.png');/* Путь к вашей картинке */
     background-size: cover; /* Картинка полностью покрывает блок */
     background-position: center; /* Центрируем изображение */
@@ -112,6 +113,12 @@ body {
     max-width: 400px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text h1{
+    margin-bottom: 20px;
+    color: #333232;
+    font-size: 50px
 }
 
 .work {
@@ -357,8 +364,104 @@ body {
     opacity: 1;
 }
 
-@media
+@media (max-width: 575px) { 
+    /* Стили для мобильных устройств */
+    .header img{
+        max-width: 100%;
+    }
+    .about{
+        max-height: 100%;
+        height: auto;
+        background-size: 160%;
+        justify-content: center;
+        background-repeat: repeat;
+    }
+    .block-content{
+        margin: none;
+    }
+    .text{
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-bottom: 40px;
+        border: #6c6c6c 3px solid;
+        background-color: #837979;
+        color: #ddd3d3;
+        margin-bottom: 200px;
+    }
+    .text h1{
+        color: #fff6f6
+    }
 
-@media(max-width: 480px) {
+    .work{
+        height: auto;
+    }
+
+    .block-work{
+        width: 100%;
+        margin-top: 40px;
+        flex-direction: column;
+        justify-self: center;
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+    .frame-container{
+        margin: 0 auto;       
+        margin-top: 20px;
+        max-width: 95%;
+    }
+
+    .photo-frame.swiper{
+        max-width: auto;
+    }
+
+    .works{
+        max-width: 95%;
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-block{
+        width: 100%;
+    }
+
+    .contacts{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .contacts-text{
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 95%;
+    }
+
+    .contact-header{
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .contact-row{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .contact-line{
+        font-size: 20px
+    }
+
+    .image-placeholder{
+        width: 95%;
+    }
     
+    .footer{
+        width: 100%;
+        height: 70px;
+    }
+
 }
+  
